@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d5b2741c-8ee2-4189-9802-f428d6d4546c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/TMOOC-JAVA.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/tedu_utils1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Project01/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Project01/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Project01/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Project01/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Project01/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Project01/Project01.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Project01/src/cn/tedu/OOPCase/Day01/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Project01/src/cn/tedu/OOPCase/Day01/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Project01/src/cn/tedu/OOPCase/Day02/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Project01/src/cn/tedu/OOPCase/Day02/PersonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Project01/src/cn/tedu/OOPCase/Day02/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Project01/src/cn/tedu/OOPCase/Day02/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Project01/src/cn/tedu/OOPCase/Day04/ArrayCopyDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Project01/src/cn/tedu/OOPCase/Day04/InnerClassDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Project01/src/cn/tedu/submarine/BattleShip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Project01/src/cn/tedu/submarine/Bomb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Project01/src/cn/tedu/submarine/EnemyLife.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Project01/src/cn/tedu/submarine/EnemyScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Project01/src/cn/tedu/submarine/GameWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Project01/src/cn/tedu/submarine/ImageResources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Project01/src/cn/tedu/submarine/Mine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Project01/src/cn/tedu/submarine/MineSubmarine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Project01/src/cn/tedu/submarine/ObserverSubmarine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Project01/src/cn/tedu/submarine/SeaObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Project01/src/cn/tedu/submarine/Torpedo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/Project01/src/cn/tedu/submarine/TorpedoSubmarine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ObjectCT/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ObjectCT/PointDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RegexDemo/RegexDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/.idea/libraries/tedu_utils1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/Code.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/out/production/Code/BallProject/ClassDemo/Ball.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/out/production/Code/BallProject/ClassDemo/MainApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/out/production/Code/BallProject/ClassDemo/StageTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/out/production/Code/BallProject/DemoTest/GUIDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/out/production/Code/BallProject/ReadMe.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/out/production/Code/BallProject/SelfTest/Ball.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/out/production/Code/BallProject/SelfTest/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/out/production/Code/Day06/ForDemo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/out/production/Code/Day06/Practice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/out/production/Code/HomeWork/HomeWork01/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/out/production/Code/day01/HelloWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/src/HomeWork/HomeWork01/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/tedu_utils1.0.jar" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="27xzwqwpAGygkyBcxGoAODszwwG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.PointDemo">
+    <configuration name="PointDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ObjectCT.PointDemo" />
+      <module name="SE01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ObjectCT.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegexDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RegexDemo.RegexDemo" />
+      <module name="SE01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RegexDemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringBuilderAPIDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StringBuilderAPI.StringBuilderAPIDemo" />
+      <module name="SE01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StringBuilderAPI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VarDoubleDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day03.VarDoubleDemo" />
+      <module name="SE01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Day03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PointDemo" />
+        <item itemvalue="Application.RegexDemo" />
+        <item itemvalue="Application.StringBuilderAPIDemo" />
+        <item itemvalue="Application.VarDoubleDemo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d5b2741c-8ee2-4189-9802-f428d6d4546c" name="Changes" comment="" />
+      <created>1650276766391</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650276766391</updated>
+      <workItem from="1650276767816" duration="5000" />
+      <workItem from="1650276818795" duration="3445000" />
+      <workItem from="1650286781915" duration="5127000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/RegexDemo/RegexDemo.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
