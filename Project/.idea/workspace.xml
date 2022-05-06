@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f1c6d410-e9d0-4cc0-8f73-6840c7ec86cd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../SE02/bos.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/demo01.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/fos.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/note.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/person.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/src/HW03/Demo01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/src/HW03/Demo02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/src/HW03/Demo3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/src/HW03/Demo4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/src/Part1_Lambda/LIstFileDemo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/src/Part1_Lambda/LambdaDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/src/Part1_Lambda/RecursionDeleteDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/src/Part1_Lambda/RecursionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/src/Part2_IO/BOSFlushDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/src/Part2_IO/CopyDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/src/Part2_IO/CopyDemo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/src/Part2_IO/CopyDemo3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/src/Part2_IO/FileInputStreamDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/src/Part2_IO/FileOutPutStreamDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/src/Part2_IO/OISDEMO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/src/Part2_IO/OOSDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/src/Part2_IO/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/src/Part2_IO/TextNote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/src/Part2_IO/WriteStringDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/view.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/view2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/view3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/view4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/view5.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE02/out/production/SE02/Day01/CreateDirectoryDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE02/out/production/SE02/Day01/CreateFileDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE02/out/production/SE02/Day01/DeleteFileDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE02/out/production/SE02/Day01/FileDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE02/out/production/SE02/Day01/ListFileDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE02/src/Day01/CreateDirectoryDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SE02/src/Part1_Lambda/CreateDirectoryDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE02/src/Day01/CreateFileDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SE02/src/Part1_Lambda/CreateFileDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE02/src/Day01/DeleteFileDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SE02/src/Part1_Lambda/DeleteFileDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE02/src/Day01/FileDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SE02/src/Part1_Lambda/FileDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE02/src/Day01/ListFileDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SE02/src/Part1_Lambda/ListFileDemo.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="28go0X3cgYf2apW2h0KSP8iaZ9d" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f1c6d410-e9d0-4cc0-8f73-6840c7ec86cd" name="Changes" comment="" />
+      <created>1651647366746</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651647366746</updated>
+      <workItem from="1651647367790" duration="32000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
