@@ -14,7 +14,7 @@ public class PWDemo02 {
         OutputStreamWriter osw = new OutputStreamWriter(fos);
         // 缓冲字符输出流，快滴血加快效率
         BufferedWriter bw = new BufferedWriter(osw);
-        PrintWriter writer = new PrintWriter(bw);
+        PrintWriter writer = new PrintWriter(bw,true);
         Scanner in = new Scanner(System.in);
         boolean isContinue = true;
         while (isContinue){
@@ -25,7 +25,6 @@ public class PWDemo02 {
             }
             else {
                 writer.println(content);
-                writer.flush();
             }
 
         }
