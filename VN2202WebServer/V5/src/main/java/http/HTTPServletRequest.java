@@ -95,4 +95,13 @@ public class HTTPServletRequest {
     public String getProtocol() {
         return protocol;
     }
+
+    /**
+     * 根据给定的消息头的名字，返回对应的消息头的值
+     * 方法参数定义作用用来接收用户指定的消息头
+     * @return 返回对应的消息头的值
+     */
+    public String getHeaders(String name) {
+        return headers.get(name);
+    }
 }
