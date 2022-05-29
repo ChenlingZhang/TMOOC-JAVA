@@ -84,11 +84,15 @@ public class HTTPServletRequest {
         return builder.toString().trim();
     }
 
-    public Socket getSocket() {
-        return socket;
+    public String getMethod() {
+        return method;
     }
 
-    public void setSocket(Socket socket) {
-        this.socket = socket;
+    public String getUrl() {
+        return url;
+    }
+
+    public String getProtocol() {
+        return protocol;
     }
 }
