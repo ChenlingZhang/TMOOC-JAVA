@@ -1,0 +1,1 @@
+这个版本用于拆分功能，将ClientHandler中的第一个环节，解析请求的细节拆分出去，使得ClientHandler仅关心处理一次HTTP请求
