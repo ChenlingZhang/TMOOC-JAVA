@@ -34,7 +34,6 @@ public class ClientHandle implements Runnable {
             指定父级目录，防止子级目录报错，影响父级目录。报空指针错误
              */
             File file = new File(static_dir,path);
-            String line;
             if (file.isFile()){ // 如果是文件，说明访问的资源存在
                 // 发送状态行
                 response.setContentFile(file);
