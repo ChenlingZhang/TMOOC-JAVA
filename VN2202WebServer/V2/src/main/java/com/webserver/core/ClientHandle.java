@@ -21,6 +21,5 @@ public class ClientHandle implements Runnable {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 }

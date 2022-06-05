@@ -20,7 +20,7 @@ public class ClientHandle implements Runnable {
             InputStream in = socket.getInputStream();
             StringBuilder builder = new StringBuilder();
             int d;
-                char pre ='a', cur='b';
+            char pre ='a', cur='b';
             while ((d = in.read())!=-1){
                 cur = (char) d;
                 if (pre == 13 && cur==10){
