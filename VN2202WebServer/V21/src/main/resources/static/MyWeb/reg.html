@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Regisration</title>
+</head>
+
+<body>
+<center>
+    <h1>
+        用户注册
+    </h1>
+    <!--
+     Get: get请求方式提交表单数据时，会将表单中收集的数据拼接到要发送的URL的抽象路径后面进行提交
+     Post: post请求方式提交表单数据时，将表单收集的数据直接包含在消息正文中
+     原则上当表单中有隐私信息或表单包含某些附件时，使用post请求提交
+     浏览器给服务器发送信息的格式：
+         "?"表示开始参数拼接
+         参数格式是用key=value的,key需要我们自行通过name属性指定，value就是表单收集的数据
+         每个参数之间用"&"标识符进行分割
+
+     -->
+    <form action="/MyWeb/reg" method="get">
+        <table border="1">
+            <tr>
+                <td>用户名:</td>
+                <td><input type="text" name="username"></td>
+            </tr>
+            <tr>
+                <td>密&emsp;码:</td>
+                <td><input type="text" name="password"></td>
+            </tr>
+
+            <tr>
+                <td>昵&emsp;称:</td>
+                <td><input type="text" name="nickname"></td>
+            </tr>
+            <tr>
+                <td>年&emsp;龄:</td>
+                <td><input type="text" name="age"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="注册">
+                </td>
+            </tr>
+        </table>
+        <form>
+</center>
+</body>
+</html>
