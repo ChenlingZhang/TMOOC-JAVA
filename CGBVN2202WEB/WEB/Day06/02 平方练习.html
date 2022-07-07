@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text">
+    <input type="button" value="平方" onclick="f()">
+    <div>
+        结果：<span></span>
+    </div>
+
+    <script>
+        function f(){
+            let number = document.querySelector("input");
+            let answer = document.querySelector("span");
+            // i.value得到的是一个字符串类型，当字符串进行-*的操作时，会自动转换成数值再进行计算/
+            // 输入abc后，会得到NaN
+            // isNaN 判断是否是NaN true表示为NaN
+            if (isNaN(number.value)){
+                answer.innerText = "输入错误，请输入一个数字";
+                return; // 终止结束程序运行
+            }
+            answer.innerText = number.value*number.value;
+        }
+    </script>
+</body>
+</html>

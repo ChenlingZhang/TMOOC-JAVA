@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>页面相关</title>
+</head>
+<body>
+  <div id="d1">这是div</div>
+  <input type="text">
+  <input type="button" onclick="f()" value="修改">
+  <input type="button" onclick="f2()" value="修改2">
+  <script>
+      function f(){
+          /* 通过id获取div的元素对象 */
+          let d = document.getElementById("d1");
+          /* 获取和修改元素的文本内容 */
+          console.log("修改前的div" + d.innerText);
+          d.innerText = "这是修改后的div"
+
+          /* 通过querySelector获去选择器对象 */
+          let i = document.querySelector("input");
+          /* 修改元素的vlaye属性*/
+          i.value = "通过querySelector修改"
+      }
+
+      function f2(){
+          let d = document.getElementById("d1");
+          let i = document.querySelector("input");
+          d.innerText = i.value;
+      }
+
+  </script>
+</body>
+</html>

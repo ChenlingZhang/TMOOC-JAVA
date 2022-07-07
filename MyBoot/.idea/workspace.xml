@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="90139f27-3f27-4463-8c48-878a8af4e6fd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/webserver/annotation/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/webserver/annotation/RequestMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/webserver/core/DispatcherServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/webserver/core/HandlerMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/webserver/core/WebSeverApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/webserver/http/EmptyRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/webserver/http/HttpContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/webserver/http/HttpServletRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/webserver/http/HttpServletResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/webserver/http/web.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/MyBoot-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/webserver/annotation/Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/webserver/annotation/RequestMapping.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/webserver/core/ClientHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/webserver/core/DispatcherServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/webserver/core/HandlerMapping$MethodMpping.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/webserver/core/HandlerMapping.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/webserver/core/WebSeverApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/webserver/http/EmptyRequestException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/webserver/http/HttpContext.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/webserver/http/HttpServletRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/webserver/http/HttpServletResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/webserver/http/web.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyFirstWeb/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyFirstWeb/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyFirstWeb/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyFirstWeb/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyFirstWeb/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyFirstWeb/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyFirstWeb/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyFirstWeb/src/main/java/com/TestBoot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyFirstWeb/src/main/java/com/controller/ArticleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyFirstWeb/src/main/java/com/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyFirstWeb/src/main/java/com/entity/Article.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyFirstWeb/src/main/java/com/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SE02/src/ThreadPoolDemo/ThreadPoolDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/java/com/webserver/annotation/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/java/com/webserver/annotation/RequestMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/java/com/webserver/controller/ArticleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/java/com/webserver/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/java/com/webserver/core/DispatcherServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/java/com/webserver/core/WebSeverApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/java/com/webserver/entity/Article.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/java/com/webserver/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/java/com/webserver/http/EmptyRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/java/com/webserver/http/HttpContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/java/com/webserver/http/HttpServletRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/java/com/webserver/http/HttpServletResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/resources/com/webserver/http/web.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/resources/static/myweb/classTable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/resources/static/myweb/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/resources/static/myweb/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/resources/static/myweb/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/resources/static/myweb/login_info_error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/resources/static/myweb/login_success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/resources/static/myweb/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/resources/static/myweb/reg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/resources/static/myweb/reg_fail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/resources/static/myweb/reg_have_user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/resources/static/myweb/reg_success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/resources/static/myweb/writeArticle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/resources/static/myweb/writeArticle_info_error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/resources/static/myweb/writeArticle_success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/resources/static/root/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/src/main/resources/static/root/404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/target/classes/com/webserver/annotation/Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V25/target/classes/com/webserver/annotation/RequestMapping.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/java/com/webserver/annotation/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/java/com/webserver/annotation/RequestMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/java/com/webserver/controller/ArticleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/java/com/webserver/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/java/com/webserver/core/DispatcherServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/java/com/webserver/core/HandlerMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/java/com/webserver/core/WebSeverApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/java/com/webserver/entity/Article.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/java/com/webserver/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/java/com/webserver/http/EmptyRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/java/com/webserver/http/HttpContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/java/com/webserver/http/HttpServletRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/java/com/webserver/http/HttpServletResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/resources/com/webserver/http/web.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/resources/static/myweb/classTable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/resources/static/myweb/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/resources/static/myweb/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/resources/static/myweb/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/resources/static/myweb/login_info_error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/resources/static/myweb/login_success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/resources/static/myweb/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/resources/static/myweb/reg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/resources/static/myweb/reg_fail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/resources/static/myweb/reg_have_user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/resources/static/myweb/reg_success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/resources/static/myweb/writeArticle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/resources/static/myweb/writeArticle_info_error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/resources/static/myweb/writeArticle_success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/resources/static/root/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V26/src/main/resources/static/root/404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/java/com/webserver/annotation/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/java/com/webserver/annotation/RequestMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/java/com/webserver/controller/ArticleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/java/com/webserver/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/java/com/webserver/core/DispatcherServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/java/com/webserver/core/HandlerMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/java/com/webserver/core/WebSeverApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/java/com/webserver/entity/Article.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/java/com/webserver/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/java/com/webserver/http/EmptyRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/java/com/webserver/http/HttpContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/java/com/webserver/http/HttpServletRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/java/com/webserver/http/HttpServletResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/resources/com/webserver/http/web.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/resources/static/myweb/classTable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/resources/static/myweb/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/resources/static/myweb/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/resources/static/myweb/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/resources/static/myweb/login_info_error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/resources/static/myweb/login_success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/resources/static/myweb/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/resources/static/myweb/reg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/resources/static/myweb/reg_fail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/resources/static/myweb/reg_have_user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/resources/static/myweb/reg_success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/resources/static/myweb/writeArticle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/resources/static/myweb/writeArticle_info_error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/resources/static/myweb/writeArticle_success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/resources/static/root/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V27/src/main/resources/static/root/404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/java/com/webserver/annotation/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/java/com/webserver/annotation/RequestMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/java/com/webserver/controller/ArticleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/java/com/webserver/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/java/com/webserver/core/DispatcherServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/java/com/webserver/core/HandlerMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/java/com/webserver/core/WebSeverApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/java/com/webserver/entity/Article.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/java/com/webserver/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/java/com/webserver/http/EmptyRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/java/com/webserver/http/HttpContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/java/com/webserver/http/HttpServletRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/java/com/webserver/http/HttpServletResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/resources/com/webserver/http/web.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/resources/static/myweb/classTable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/resources/static/myweb/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/resources/static/myweb/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/resources/static/myweb/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/resources/static/myweb/login_info_error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/resources/static/myweb/login_success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/resources/static/myweb/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/resources/static/myweb/reg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/resources/static/myweb/reg_fail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/resources/static/myweb/reg_have_user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/resources/static/myweb/reg_success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/resources/static/myweb/writeArticle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/resources/static/myweb/writeArticle_info_error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/resources/static/myweb/writeArticle_success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/resources/static/root/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VN2202WebServer/V28/src/main/resources/static/root/404.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VN2202WebServer/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../VN2202WebServer/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VN2202WebServer/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../VN2202WebServer/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VN2202WebServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../VN2202WebServer/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2B138X5iT6XnfThVgIGzY86VcOC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/webserver" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/webserver" />
+      <recent name="$PROJECT_DIR$/src/main/resources/com/webserver/http" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="90139f27-3f27-4463-8c48-878a8af4e6fd" name="Changes" comment="" />
+      <created>1656059607343</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656059607343</updated>
+      <workItem from="1656059608534" duration="767000" />
+      <workItem from="1656119020255" duration="2565000" />
+      <workItem from="1656124373711" duration="3094000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

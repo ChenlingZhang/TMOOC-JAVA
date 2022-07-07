@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+</head>
+<body>
+    <center>
+        <h1>用户注册</h1>
+        <!--
+            form是表单标签,具备着提交数据的功能
+            action:用于指定表单提交的位置(表单收集的数据提交给谁)
+            method:用于指定表单提交数据的方式,有两种可选值:
+                GET:GET请求方式提交表单数据时,会将表单中收集的数据,
+                    拼接到要发送的URL的抽象路径后面进行提交
+                    localhost:8088/myweb/reg?xxxxxx
+                POST:POST请求方式提交表单数据时,将表单收集的数据,
+                    包含在消息正文中.
+                原则上:当表单中有隐私信息时,或者表单中包含某些附件时,这个时候使用POST请求提交
+                如果不写method属性,就默认是get方式
+            浏览器给服务器发送信息的格式:
+                "?表示开始拼接参数"
+                参数格式是key=value,key需要我们自行通过name属性指定,value就是表单收集的数据
+                参数之间用&分隔
+                http://localhost:8088/myweb/reg?key1=value1&key2=value2&...
+        -->
+        <form action="/myweb/reg" method="get">
+            <table border="1"><!--表格标签-->
+                <tr><!--行标签-->
+                    <td>用户名:</td><!--列标签-->
+                    <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <!--&emsp; 是一个全角空格-->
+                    <td>密&emsp;码:</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td>昵&emsp;称:</td>
+                    <td><input type="text" name="nickname"></td>
+                </tr>
+                <tr>
+                    <td>年&emsp;龄:</td>
+                    <td><input type="text" name="age"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <!--提交表单的按钮有专门的,type是submit-->
+                        <input type="submit" value="注册">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>

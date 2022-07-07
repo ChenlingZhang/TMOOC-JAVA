@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+    <input type="text" id="i1">
+    <input type="text" id="i2">
+    <input type="button" value="加" onclick="f(1)">
+    <input type="button" value="减" onclick="f(2)">
+    <input type="button" value="乘" onclick="f(3)">
+    <input type="button" value="除" onclick="f(4)">
+
+    <div>
+        结果：<span></span>
+    </div>
+
+    <script>
+        var number1 = document.getElementById("i1");
+        var number2 = document.getElementById("i2");
+        var s = document.querySelector("span");
+        function f1(){
+
+            //第一种方式：因为字符串相加，最终结果为拼接的结果
+            // s.innerText = number1.value*1 + number2.value*1;
+            //第二种方式： Number（）转型想number1和number2转型成number类型
+            //s.innerText = Number(number1.value) + Number(number2.value);
+            s.innerText = parseFloat(number1.value) + parseFloat(number2.value);
+        }
+        function f2(){
+            s.innerText = number1.value - number2.value;
+        }
+        function f3(){
+            s.innerText = number1.value* number2.value;
+        }
+        function f4(){
+            s.innerText = number1.value / number2.value;
+        }
+
+        function f(x){
+            switch (x){
+                case 1:
+                    s.innerText = i1.value*1 + i2.value*1;
+                    break;
+                case 2:
+                    s.innerText = i1.value - i2.value;
+                    break;
+                case 3:
+                    s.innerText = i1.value * i2.value;
+                    break;
+                case 4:
+                    s.innerText = i1.value / i2.value;
+                    break;
+
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -31,6 +31,10 @@
         <module>V20</module>
         <module>V21</module>
         <module>V22</module>
+        <module>V25</module>
+        <module>V26</module>
+        <module>V27</module>
+        <module>V28</module>
     </modules>
 
     <properties>

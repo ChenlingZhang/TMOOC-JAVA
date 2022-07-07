@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 的用法</title>
+    <!--使用style标签统一赋值，与css选择器一起使用-->
+    <style>
+        /*选中页面中所有的h2标签*/
+        h2{
+            color: blue;
+            background-color: yellow;
+        }
+    </style>
+    <!--css使用方式3
+        引用外部css需要在文件外创建.css文件-->
+    <link rel="stylesheet" href="my.css">
+</head>
+<body>
+<!--css使用方式1
+    在标签中使用style属性-->
+<h1 style="color: red; background-color: green">内链样式1</h1>
+<h1>内链样式2</h1>
+
+<h2>内部样式1</h2>
+<h2>内部样式2</h2>
+
+<h3>外部样式1</h3>
+<h3>外部样式2</h3>
+
+</body>
+</html>

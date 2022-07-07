@@ -1,0 +1,88 @@
+<!DOCTYPE html><!--文档声明-->
+<html lang="en"><!--根标签-->
+<head><!--头部分,存储基本属性信息-->
+    <meta charset="UTF-8"><!--指定网页打开的编码-->
+    <title>我的首页</title><!--声明网页标题-->
+</head>
+<body><!--体部分,存储所有网页可视化数据-->
+    <!-- crtl+/ 生成注释 -->
+    <!--
+        h标签:分为<h1>~<h6>表示各级标题.标题独占一行
+        center标签:作用是将它所包含的内容在浏览器上居中显示
+        input标签:输入组件,用于获取用户在网页输入的内容.输入组件可以有多种样子.
+                 具体通过type属性执行的,例如:
+                 type='text' 文本框
+                 type='password' 密码框
+                 type='radio' 单选框
+                 type='checkbox' 多选框
+                 type='button' 无事件按钮
+                 type='submit' 提交按钮
+        a标签:超链接标签,标签中间指定超链接点击的文本文字,
+             href属性用于指定点击后跳转到的位置
+        br标签:换行
+        table标签:表格,划分表格所在的位置 border属性用于指定边框
+                 tr标签:行标签,用于table中表示一行
+                        td标签:列标签,用于tr中表示一列
+                              rowspan属性:跨行合并列,合并是从上到下合并行
+                              colspan属性:跨列合并行,合并是从左到右合并列
+                              align属性:对其方式.left左对齐 right右对齐 center居中
+        img标签:图片标签,在网页上插入一张图片,其中src属性写插入图片的路径
+            路径有两种:
+               1:相对路径:
+                 页面上使用"./"表示的是当前目录,由于html是被浏览器解析的,因此该路径不能与在java
+                 源码中使用的"./"进行混淆(实际表示的路径不相同)
+                    浏览器在解释页面上的"./"时,是根据请求当前页面前的URL中该页面所在的目录
+                    比如:访问http://localhost:8088/myweb/index.html,那index.html中使用了
+                    "./"表示路径,则浏览器认为"./"是http://localhost:8088/myweb/这部分,因此
+                    <img src="./logo.png">,
+                    这个标签表示的是<img src="http://localhost:8088/myweb/logo.png">
+                    我们访问不存在的页面http://localhost:8088/myweb/index123.html,会跳转到
+                    404页面,此页面有一张图片<img src="./404.png">,
+                    浏览器认为"./"是http://localhost:8088/myweb/,这个标签表示的是
+                    <img src="http://localhost:8088/myweb/404.png">
+               2:绝对路径:
+                 "./"是URL中抽象路径中最后一个"/"的位置
+                 "/"是URL中抽象路径中的第一个"/"的位置
+                 举例子:
+                    http://localhost:8088/myweb/index.html
+                                         |----抽象路径-----|
+                    "./"是http://localhost:8088/myweb/
+                    "/"是http://localhost:8088/
+                    <img src="/myweb/logo.png">
+    -->
+    <center>
+        <img src="/myweb/logo.png">
+        <br>
+        <input type="text" size="32"><!--不需要成对出现,就是自闭标签-->
+        <!--value是按钮上显示的名字,onclick是点击监听事件,点击按钮会触发代码-->
+        <input type="button" value="百度一下" onclick="alert('点你妹啊!!!')">
+        <br>
+        <!--localhost:8088/myweb/index.html-->
+        <a href="/myweb/reg.html">用户注册</a>
+        <br>
+        <a href="/myweb/login.html">用户登录</a>
+        <br>
+        <a href="/myweb/writeArticle.html">发表文章</a>
+        <br>
+        <br>
+        <a href="/myweb/showAllArticle.html">发表文章</a>
+        <br>
+        <!--服务器要返回一个动态页面,所以需要涉及业务-->
+        <a href="/myweb/showAllUser">用户列表</a>
+        <br>
+        <a href="http://www.taobao.com">淘宝</a>
+        <table border="1">
+            <tr><!--第一行-->
+                <td rowspan="2">第一行第一列</td>
+                <td>第一行第二列</td>
+                <td>第一行第三列</td>
+            </tr>
+            <tr><!--第二行-->
+                <!--<td>第二行第一列</td>-->
+                <td colspan="2" align="center">第二行第二列</td>
+                <!--<td>第二行第三列</td>-->
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

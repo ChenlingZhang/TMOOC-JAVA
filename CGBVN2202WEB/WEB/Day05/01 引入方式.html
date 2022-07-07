@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <!--点击事件-->
+  <input type="button" value="内链按钮" onclick="alert('success linked inside')">
+  <!--内部引入-->
+  <script>
+      console.log("inside link success")
+  </script>
+  <!--外部引入-->
+  <script src="my.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>方法</title>
+</head>
+<body>
+    <script>
+        // 1. 无参无返回值
+        function f1(){
+            console.log("f1");
+        }
+        f1();
+        // 2. 有参无返回值
+        function f2(name, age){
+            console.log(name+":"+age);
+        }
+        let name="张三";
+        let age = 10;
+        f2(name,age);
+
+        // 3. 无参有返回值
+        function f3(){
+            return "no parameter return result";
+        }
+        let f3_result = f3();
+        console.log(f3_result);
+
+        // 4. 有参有返回值
+        function f4(x,y){
+            return x*y;
+        }
+        let restult = f4(3,4);
+        console.log(restult);
+
+        // 5. 第二种方法申明
+        let f5 = function (name,age) {
+            console.log(name+":"+age);
+        }
+        f5("blablabla", 11);
+
+        let f6= new Function ("name","age","console.log(name+':'+age)");
+        f6("zzzz",20);
+    </script>
+</body>
+</html>
