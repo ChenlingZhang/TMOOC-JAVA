@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>员工列表</title>
+</head>
+<body>
+  <input type="text" id="i1" placeholder="姓名">
+  <input type="text" id="i2" placeholder="工资">
+  <input type="text" id="i3" placeholder="工作">
+  <input type="button" value="添加" onclick="f()">
+  <table border="1">
+    <tr>
+        <th>姓名</th>
+        <th>工资</th>
+        <th>工作</th>
+    </tr>
+  </table>
+<script>
+    let table = document.querySelector("table");
+    function f(){
+        let tr = document.createElement("tr");
+        let nameTd = document.createElement("td");
+        let salaryTd = document.createElement("td");
+        let workTd = document.createElement("td");
+
+        nameTd.innerText = i1.value;
+        salaryTd.innerText = i2.value;
+        workTd.innerText = i3.value;
+
+        tr.append(nameTd,salaryTd,workTd);
+        table.append(tr);
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>猜数字</title>
+</head>
+<body>
+    <input type="text" placeholder="请输出一个数字" id="i1">
+    <input type="button" value="猜一下" onclick="guess()">
+    <div></div>
+    <script>
+        let number = parseInt(Math.random()*100)+1;
+        let d1 = document.querySelector("div");
+        console.log(number);
+        function guess(){
+            let count = 0;
+            let guessNumber = i1.value;
+            if (number == guessNumber){
+                count++;
+                d1.innerText = "猜对了，一共猜了"+count+"次";
+            }
+            if (number>guessNumber){
+                count++;
+                d1.innerText = "猜小了";
+            }
+            if (number<guessNumber){
+                count++;
+                d1.innerText = "猜大了";
+            }
+        }
+    </script>
+</body>
+</html>

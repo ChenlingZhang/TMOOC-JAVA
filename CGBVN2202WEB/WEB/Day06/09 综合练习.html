@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>综合练习</title>
+</head>
+<body>
+    <table border="1px">
+        <caption>个人信息</caption>
+        <tr>
+            <td>照片</td>
+            <td><img src="head.png" style="width: 200px; height: 200px" id="head_img"></td>
+        </tr>
+        <tr>
+            <td>名字</td>
+            <td id="name">xxx</td>
+        </tr>
+        <tr>
+            <td>年龄</td>
+            <td id="age">xxxx</td>
+        </tr>
+        <tr>
+            <td>好友</td>
+            <td>
+                <ul id="friend_list"></ul>
+            </td>
+        </tr>
+    </table>
+<input type="button" value="Get Data" onclick="get_data()">
+</body>
+    <script>
+        function get_data(){
+            let person = {
+                picture:"p1.png",
+                name:"zzz",
+                age:20,
+                friends:["aaaa","vvvv","cccc"]
+            }
+            //替换头像
+            let img_path = document.getElementById("head_img");
+            img_path.src =person.picture;
+
+            //更改名字
+            let name = document.getElementById("name");
+            name.innerText = person.name;
+
+            //更改年龄
+            let age = document.getElementById("age");
+            age.innerText = person.age;
+
+            //遍历添加好友列表
+            let ul = document.querySelector("ul");
+            for (let friend of person.friends) {
+                let li = document.createElement("li");
+                li.innerText = friend;
+                ul.append(li);
+            }
+        }
+    </script>
+</html>

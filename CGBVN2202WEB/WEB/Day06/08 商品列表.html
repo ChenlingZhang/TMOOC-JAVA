@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品列表</title>
+</head>
+<body>
+    <table border="1px">
+        <caption>商品列表</caption>
+        <tr>
+            <th>商品名</th>
+            <th>价格</th>
+            <th>库存</th>
+        </tr>
+    </table>
+    <script>
+        //定义一个Person类
+        function Person(){}
+        let p1 = new Person();
+        p1.name = "zcl";
+        p1.age = 22;
+        p1.run = function () {
+            console.log("My name is " + this.name + ", now is " + this.age);
+        }
+        p1.run();
+
+        //直接实例化对象
+        let p2 = {};
+        p2.name = "zzz";
+        p2.age = 27;
+        p2.run2 = function (){
+            console.log(this.name + "   " + this.age);
+        }
+        p2.run2();
+
+        //实例化自带属性和方法的对象
+        let p3 = {
+            name:"小刘",
+            age:20,
+            weight:190,
+            run:function () {
+                alert(this.name+":"+this.age+"-"+this.weight);
+            }
+        }
+        p3.run();
+
+        // 通过自定义对象封装数据
+        let arr = [{name:"p50",price:5000,stock:1000},
+                   {name:"Mate40 Pro", price: 6799, stock: 500},
+                   {name: "Mate40",price: 4999,stock: 5000},
+                   {name: "MatePad Pro",price: 4999,stock:1000}]
+        // 将数组中的商品展示在页面中
+        let table = document.querySelector("table");
+        for (let product of arr) {
+            let tr = document.createElement("tr");
+            let name_td = document.createElement("td");
+            let price_td = document.createElement("td");
+            let count_td = document.createElement("td");
+            name_td.innerText = product.name;
+            price_td.innerText = product.price;
+            count_td.innerText = product.stock;
+            tr.append(name_td,price_td,count_td);
+            table.append(tr);
+        }
+    </script>
+</body>
+</html>
