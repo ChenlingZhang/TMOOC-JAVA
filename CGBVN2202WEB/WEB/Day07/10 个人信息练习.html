@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>综合练习</title>
+</head>
+<body>
+<div>
+<table border="1px">
+    <caption>个人信息</caption>
+    <tr>
+        <td>照片</td>
+        <td><img :src="person.imgUrl" style="width: 200px; height: 200px" ></td>
+    </tr>
+    <tr>
+        <td>名字</td>
+        <td>{{person.name}}</td>
+    </tr>
+    <tr>
+        <td>年龄</td>
+        <td>{{person.age}}</td>
+    </tr>
+    <tr>
+        <td>好友</td>
+        <td>
+            <ul>
+                <li v-for="name in person.friend">{{name}}</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+<input type="button" value="Get Data" @click="get_data()">
+</div>
+<script src="../vue/vue.js"></script>
+<script>
+    let v = new Vue(
+        {
+            el:"div",
+            data:{
+                person:{name:"xxx",age:"xxxx",imgUrl:"./head.png",
+                friend: ["xxx","xxx"]}
+            },
+            methods:{
+                get_data(){
+                  let p = {name: "zzzz", age: 30, imgUrl:"./p1.png",friend: ["aaa","ccc","dddd"]};
+                  v.person = p;
+
+              }
+            }
+        }
+    )
+</script>
+</body>
+
+</html>

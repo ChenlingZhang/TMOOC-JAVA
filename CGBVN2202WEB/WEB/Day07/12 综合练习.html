@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<div id="main">
+
+    <!--登陆状态下显示-->
+    <div v-if="islogin">
+        <input type="text" v-model="name">
+        <input type="button" value="添加" @click="reg()">
+        <a href="javascript:void(0)" @click="islogin=false">登出</a>
+    </div>
+    <!--未登陆状态下显示-->
+    <div v-else>
+        <a href="javascript:void(0)" >注册</a>
+        <a href="javascript:void(0)" @click="islogin=true">登陆</a>
+    </div>
+
+
+    <ul>
+        <li v-for="user in userList">{{user}}</li>
+    </ul>
+</div>
+<script src="../vue/vue.js"></script>
+<script>
+    let v = new Vue({
+        el: "#main",
+        data:{
+            // 控制是否显示
+            name: "",
+            islogin:false,
+            userList: ["aaaa","bbbb"],
+
+        },
+        methods:{
+            reg(){
+                v.userList.push(v.name);
+                v.name="";
+            }
+        }
+    })
+</script>
+</body>
+</html>

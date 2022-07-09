@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>员工列表练习</title>
+</head>
+<body>
+  <div>
+    <input type="text" placeholder="Name" v-model="name">
+    <input type="text" placeholder="Salary" v-model="salary">
+    <input type="text" placeholder="Job" v-model="job">
+    <input type="button" value="Add Employee" @click="addToArr()">
+    <table border="1">
+      <caption>Employee Table</caption>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Salary</th>
+        <th>Job</th>
+        <th>Action</th>
+      </tr>
+      <tr v-for="(emp,i) in arr">
+        <td>{{i+1}}</td>
+        <td>{{emp.name}}</td>
+        <td>{{emp.salary}}</td>
+        <td>{{emp.job}}</td>
+        <td><input type="button" value="delete" @click="del(i)"></td>
+      </tr>
+    </table>
+    <script src="../vue/vue.js"></script>
+    <script>
+      let v = new Vue({
+        el:"div",
+        data:{
+          name:"",
+          salary:"",
+          job:"",
+          arr: [{name: "张三",salary: 500,job: "hr"},
+                {name: "李四",salary: 1000,job: "saler"}]
+        },
+        methods:{
+          addToArr(){
+            v.arr.push({name:v.name,salary:v.salary,job:v.job});
+            v.name="";
+            v.salary="";
+            v.job="";
+          },
+          del(i){
+            /*删除arr数组中i下表位置的数据 */
+            /*i为下表值，1为数量*/
+           v.arr.splice(i,1);
+          }
+        }
+      })
+    </script>
+  </div>
+</body>
+</html>

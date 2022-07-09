@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>猜数字</title>
+</head>
+<body>
+    <div>
+        <input type="text" placeholder="请输出一个数字" v-model="guess_number">
+        <input type="button" value="猜一下" @click="guess()">
+        {{info}}
+    </div>
+    <script src="../vue/vue.js"></script>
+    <script>
+        let number = parseInt(Math.random()*100)+1;
+        console.log(number);
+        let count = 0;
+        let v = new Vue({
+            el:"div",
+            data:{
+                info:"",
+                guess_number:""
+            },
+            methods:{
+                guess(){
+
+                    if (number == v.guess_number){
+                        count++;
+                        v.info="恭喜你猜对了，一次猜了"+count+"次";
+                    }
+                    if (number > v.guess_number){
+                        count++;
+                        v.info="猜小了";
+                    }
+                    if (number < v.guess_number){
+                        count++;
+                        v.info="猜大了";
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>

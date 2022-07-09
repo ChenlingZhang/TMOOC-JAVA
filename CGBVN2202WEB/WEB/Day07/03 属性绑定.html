@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <input type="text" :value="msg">
+        <a :href="url">超链接</a>
+        <img :src="path" alt="图片加载失败">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+        let v = new Vue({
+            el:"div",
+            data:{
+                msg:"属性绑定测试",
+                url:"http://www.baidu.com",
+                path:"../Day06/p1.png"
+            }
+        });
+    </script>
+</body>
+</html>
