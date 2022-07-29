@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="./css/eui.css">
+</head>
+<body>
+<div id="app">
+    <input type="text" placeholder="Name" v-model="name">
+    <input type="text" placeholder="Salary" v-model="salary">
+    <input type="text" placeholder="Job" v-model="job">
+    <input type="button" value="Add Employee" @click="addToArr()">
+    <el-table :data="arr" style="width: 100%">
+        <el-table-column type="index" label="序号" width="180"></el-table-column>
+        <el-table-column prop="name" label="姓名" width="180"></el-table-column>
+        <el-table-column prop="salary" label="工资" width="180"></el-table-column>
+        <el-table-column prop="job" label="职业" width="300"></el-table-column>
+        <el-table-column label="操作">
+            <!--scope代表每行对应的数据，index是下标值，row是对象-->
+            <template slot-scope="scope">
+                <el-popconfirm @confirm="handleDelete(scope.$index, scope.row)"
+                        title="这是一段内容确定删除吗？"
+                >
+                    <el-button size="mini" type="danger" slot="reference">删除</el-button>
+                </el-popconfirm>
+            </template>
+        </el-table-column>
+    </el-table>
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="../vue/vue.js"></script>
+<!-- import JavaScript -->
+<script src="./js/eui.js"></script>
+<script>
+    let v = new Vue({
+        el: '#app',
+        data: function() {
+            return {
+                arr:[],
+                name:"",
+                salary:"",
+                job:""
+            }
+        },
+
+        methods:{
+            addToArr(){
+                if (v.name.trim() == '' || v.salary.trim() == '' || v.job.trim()==''){
+                    v.$message.error("必须添加数据");
+                    return
+                }
+                v.arr.push({name:v.name,salary:v.salary,job:v.job});
+                v.name="";
+                v.salary="";
+                v.job="";
+            },
+            handleDelete(index, row){
+                console.log(index + "," + row.name);
+                v.arr.splice(index,1);
+            }
+        }
+    })
+</script>
+</html>

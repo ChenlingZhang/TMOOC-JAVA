@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="./css/eui.css">
+    <style>
+        body{
+            font: 18px "Microsoft YaHei UI";
+            margin: 0;
+        }
+
+        header a{
+            text-decoration: none;
+            color:#6c6c6c;
+        }
+
+        header a:hover {
+            color: #0aa1ed;
+        }
+        .el-table .el-table__cell{
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <el-container>
+        <el-header style="padding: 0; height: 150px">
+            <div style="width: 1200px; margin: 0 auto">
+                <img src="imgs/logo.png" style="width: 300px; vertical-align: middle">
+                <a href="">首页</a><el-divider direction="vertical"></el-divider>
+                <a href="">热点咨询</a><el-divider direction="vertical"></el-divider>
+                <a href="">商家入驻</a><el-divider direction="vertical"></el-divider>
+                <a href="">社会招聘</a><el-divider direction="vertical"></el-divider>
+                <a href="">校园招聘</a><el-divider direction="vertical"></el-divider>
+                <a href="">帮助中心</a><el-divider direction="vertical"></el-divider>
+            </div>
+            <!--导航栏目-->
+            <div style="width: 100%; height: 60px; background-color: #82c8ec">
+                <div class="line"></div>
+                <el-menu style="width: 1200px; margin: 0 auto"
+                        default-active="1"
+                        class="el-menu-demo"
+                        mode="horizontal"
+                        @select="handleSelect"
+                        background-color="#82c8ec"
+                        text-color="#fff"
+                        active-text-color="#fff">
+                    <el-menu-item index="1">精彩活动</el-menu-item>
+                    <el-menu-item index="2">当季女装</el-menu-item>
+                    <el-menu-item index="3">品牌男装</el-menu-item>
+                    <el-menu-item index="4">环球美食</el-menu-item>
+                    <el-menu-item index="5">医药健康</el-menu-item>
+                    <el-menu-item index="6">美妆彩妆</el-menu-item>
+                    <el-menu-item index="7">母婴产品</el-menu-item>
+                    <!--Search Menu-->
+                    <div style="float: right; margin-top: 15px">
+                        <el-input size="mini" placeholder="请输入关键字搜索"></el-input>
+                        <el-button style="position:absolute; background-color: rgba(0,0,0,0); border: 0; right: 0; top: 11px" icon="el-icon-search"></el-button>
+                    </div>
+                </el-menu>
+
+            </div>
+        </el-header>
+        <el-main style="width: 1200px; margin: 0 auto">
+            <div>
+                <el-row :gutter="20">
+                    <el-col :span="18">
+                        <el-carousel height="300px">
+                            <el-carousel-item v-for="banner in bannerArr">
+                                <el-image :src="banner.url" style="width: 100%; height: 100%"/>
+                            </el-carousel-item>
+                        </el-carousel>
+                    </el-col>
+                    <el-col :span="6">
+                        <el-card style="height: 300px">
+                            <h3><i style="font-weight: bold" class="el-icon-trophy"></i>销量最高</h3>
+                            <el-divider></el-divider>
+                            <el-table style="width: 500px" :data="topArr">
+                                <el-table-column type="index" label="排名" width="50px"></el-table-column>
+                                <el-table-column label="商品名">
+                                    <template slot-scope="scope">
+                                        <a href="" style="text-decoration: none; color: #333">
+                                            {{scope.row.title}}
+                                        </a>
+                                    </template>
+                                </el-table-column>
+                                <el-table-column prop="saleCount" label="销量" ></el-table-column>
+                            </el-table>
+                        </el-card>
+                    </el-col>
+                </el-row>
+            </div>
+        </el-main>
+        <el-footer></el-footer>
+    </el-container>
+
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="../vue/vue.js"></script>
+<!-- import JavaScript -->
+<script src="./js/eui.js"></script>
+<script>
+    let v = new Vue({
+        el: '#app',
+        data: function() {
+            return {
+                bannerArr:[{url:"imgs/b1.jpg"},{url:"imgs/b2.jpg"},{url:"imgs/b3.jpg"}],
+                topArr:[
+                    {title:"小米手机", saleCount:5000},
+                    {title:"华为手表",saleCount: 4000},
+                    {title:"毛巾",saleCount: 3000},
+                    {title: "双飞燕鼠标点",saleCount: 2000},
+                    {title:"耐克篮球", saleCount: 1000},
+                    {title: "阿迪袜子",saleCount: 500}]
+            }
+        }
+    })
+</script>
+</html>

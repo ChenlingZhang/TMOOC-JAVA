@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Font-Icon</title>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="./css/eui.css">
+</head>
+<body >
+<div id="app">
+    <div class="demo-image">
+         <div class="block" v-for="fit in fits" :key="fit">
+            <span class="demonstration">{{ fit }}</span>
+            <el-image
+                style="width: 100px; height: 100px"
+                :src="url"
+                :fit="fit">
+            </el-image>
+        </div>
+    </div>
+
+    <div>
+        <h1>1.保证图片完整性且不变形</h1>
+        <div class="demo-image">
+            <div class="block" v-for="fit in fits" :key="fit">
+                <span class="demonstration">{{ fit }}</span>
+                <el-image
+                        style="width: 200px; height: 200px"
+                        :src="url"
+                        fit="contain">
+                </el-image>
+            </div>
+        </div>
+        <h1>2.保证图片的完整性</h1>
+        <div class="demo-image">
+            <div class="block" v-for="fit in fits" :key="fit">
+                <span class="demonstration">{{ fit }}</span>
+                <el-image
+                        style="width: 200px; height: 200px"
+                        :src="url"
+                        fit="cover">
+                </el-image>
+            </div>
+        </div>
+        <h1>3.保证原有图片宽高比并且占满200*200</h1>
+        <div class="demo-image">
+            <div class="block" v-for="fit in fits" :key="fit">
+                <span class="demonstration">{{ fit }}</span>
+                <el-image
+                        style="width: 200px; height: 200px"
+                        :src="url"
+                        fit="scale-down">
+                </el-image>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<!-- 先引入 Vue -->
+<script src="../../vue/vue.js"></script>
+<!-- 引入组件库 -->
+<script src="./js/eui.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function() {
+            return {
+                fits: ['fill', 'contain', 'cover', 'none', 'scale-down'],
+                url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg'
+            }
+        }
+    })
+</script>
+</html>

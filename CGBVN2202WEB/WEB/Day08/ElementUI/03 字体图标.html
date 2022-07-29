@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Font-Icon</title>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="./css/eui.css">
+</head>
+<body id="app">
+    <i class="el-icon-eleme" style="color: #0aa1ed; font-size: 30px">饿了么</i>
+    <i class="el-icon-share"></i>
+    <i class="el-icon-delete"></i>
+    <el-button type="primary" icon="el-icon-search">搜索</el-button>
+</body>
+<!-- 先引入 Vue -->
+<script src="../../vue/vue.js"></script>
+<!-- 引入组件库 -->
+<script src="./js/eui.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function() {
+            return {
+            }
+        }
+    })
+</script>
+</html>

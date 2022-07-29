@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="./css/eui.css">
+    <style>
+        body{
+            margin: 0;
+            background-image: url("imgs/bg.jpg");
+            background-size: cover;/*用于设置全屏背景*/
+            text-align: center;
+        }
+
+        h1{
+            font-size: 72px;
+            color: rgb(0,150,215);
+            margin-bottom: 0;
+        }
+        img{
+            width: 100px;
+        }
+        h2{
+            font-size: 32px;
+            color: #0095d7;
+            margin: 0;
+        }
+        .box-card{
+            width: 600px;
+            height: 300px;
+            background-color: rgba(255,255,255,0.3);
+            margin: 0 auto;
+        }
+        span{
+            text-align: center;
+            vertical-align: center;
+            horiz-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <h1>欢迎来到酷鲨商城</h1>
+    <img src="imgs/shark.png">
+    <h2>CoolSharkMall</h2>
+    <el-card class="box-card">
+        <el-form style="width: 400px; margin: 30px auto" label-width=60px">
+            <el-form-item label="用户名">
+                <el-input type="text" placeholder="请输入用户名" v-model="user.username"></el-input>
+            </el-form-item>
+
+            <el-form-item label="密码">
+                <el-input  type="password" placeholder="请输入密码" v-model="user.password"></el-input>
+            </el-form-item>
+            <el-form-item>
+                <el-button  type="primary">登陆</el-button>
+            </el-form-item>
+
+    </el-form>
+    </el-card>
+
+
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="../vue/vue.js"></script>
+<!-- import JavaScript -->
+<script src="./js/eui.js"></script>
+<script>
+    let v = new Vue({
+        el: '#app',
+        data: function() {
+            return {
+                user:{
+                    username:"",
+                    password:"",
+                }
+            }
+        }
+    })
+</script>
+</html>
