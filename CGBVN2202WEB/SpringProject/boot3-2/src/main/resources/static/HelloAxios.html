@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <h1>{{info}}</h1>
+        <input type="button" value="测试异步get" @click="f1()">
+        <input type="button" value="测试异步post" @click="f2()">
+    </div>
+    <script src="js/vue.js"></script>
+    <script src="js/axios.min.js"></script>
+    <script>
+
+        let v = new Vue(
+            {
+                el:"div",
+                data:{
+                    info:"测试vue"
+                },
+                methods:{
+                  f1(){
+                      axios.get("/hello1Axios?info=tom").then(function (response){
+                          alert(response.data)
+                      })
+                  },
+                  f2(){
+                      axios.post("/hello2Axios",{info:"刘德华"}).then(function (response){
+                          alert(response.data)
+                      })
+                  }
+                }
+            }
+        )
+    </script>
+</body>
+</html>

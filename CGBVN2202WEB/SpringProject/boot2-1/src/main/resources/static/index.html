@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>工程首页</h1>
+    <h2>通过链接发出请求</h2>
+    <!--通过超链接访问后台，路径有两种书写方式：1. 相对路径 2. 绝对路径-->
+    <!--相对路径是相对于当前页面所处位置
+    -->
+    <a href="hello">相对路径访问</a>
+    <!--绝对路径1：相对于工程的根路径，/代表工程的根路径-->
+    <a href="/hello">绝对路径1</a>
+    <!--绝对路径2：全路径（一般在访问其他网站资源时使用）-->
+    <a href="http://localhost:8080/hello">绝对路径2</a>
+
+    <h2>通过form表单发出请求</h2>
+    <form action="/param1" method="get">
+        <input type="text" name="info">
+        <input type="submit">
+    </form>
+
+    <h2>第二种传参方式</h2>
+    <form action="/param2" method="get">
+        <input type="text" name="name">
+        <input type="text" name="age">
+        <input type="submit">
+    </form>
+
+    <h2>第三种传参数方式</h2>
+    <form action="/param3">
+        <input type="text" name="name">
+        <input type="text" name="sal">
+        <input type="text" name="job">
+        <input type="submit">
+    </form>
+</body>
+</html>
