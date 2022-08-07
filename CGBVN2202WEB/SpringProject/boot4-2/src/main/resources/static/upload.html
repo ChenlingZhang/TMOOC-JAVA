@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="css/eui.css">
+</head>
+<body>
+<div id="app">
+    <!-- name代表文件上传时,文件的参数名 将文件以picFile传递向后端时，后端会以picFile进行接收 -->
+    <el-upload
+            action="upload"
+            name = "picFile"
+            list-type="picture-card"
+            :on-preview="handlePictureCardPreview"
+            :on-remove="handleRemove">
+        <i class="el-icon-plus"></i>
+    </el-upload>
+    <el-dialog :visible.sync="dialogVisible">
+        <img width="100%" :src="dialogImageUrl" alt="">
+    </el-dialog>
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="js/vue.js"></script>
+<!-- import JavaScript -->
+<script src="js/eui.js"></script>
+<script src="js/axios.min.js"></script>
+<script>
+    let v = new Vue({
+        el: '#app',
+        data: function() {
+            return {
+                dialogImageUrl: '',
+                dialogVisible: false
+            };
+        },
+        methods: {
+            handleRemove(file, fileList) {
+                /*file表示需要被删除的文件，file.response表示文件上传成功后，服务器响应的数据*/
+                console.log(file, fileList);
+                axios.get("/remove?name="+file.response).then(function (response) {
+                    alert("服务器图片删除成功！");
+                })
+            },
+            handlePictureCardPreview(file) {
+                this.dialogImageUrl = file.url;
+                this.dialogVisible = true;
+            }
+        }
+    })
+</script>
+</html>

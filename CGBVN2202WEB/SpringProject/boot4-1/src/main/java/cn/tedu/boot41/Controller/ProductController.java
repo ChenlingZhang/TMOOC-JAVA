@@ -21,4 +21,19 @@ public class ProductController {
     public List<Product> select(){
         return mapper.select();
     }
+
+    @RequestMapping("delete")
+    public void delete(int id){
+        mapper.deleteById(id);
+    }
+
+    @RequestMapping("selectById")
+    public Product selectById(int id){
+        return mapper.selectById(id);
+    }
+
+    @RequestMapping("update")
+    public void update(@RequestBody Product product){
+        mapper.update(product);
+    }
 }

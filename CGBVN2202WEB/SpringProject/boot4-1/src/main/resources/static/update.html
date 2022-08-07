@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1>修改页面</h1>
+  <div>
+    <input type="text" v-model="product.id" placeholder="id" readonly>
+    <input type="text" v-model="product.title" placeholder="标题">
+    <input type="text" v-model="product.price" placeholder="价格">
+    <input type="text" v-model="product.saleCount" placeholder="销量">
+    <input type="submit" value="修改" @click="update()">
+  </div>
+<script src="js/vue.min.js"></script>
+<script src="js/axios.min.js"></script>
+<script>
+    let v = new Vue({
+        el:"div",
+        data:{
+            product:{}
+        },
+        created:function (){
+            // 页面加载完成后，的到商品的id值，通过id查询商品信息，并展示在页面中，等待修改
+            // location.search 获取地址栏中参数
+            // split分割，得到的是一个数组，根据下标获取想要的数据
+            let id = location.search.split("=")[1];
+            console.log(id);
+            axios.get("/selectById?id="+id).then(function (response) {
+                // 把服务器查询回来的商品信息赋值给Vue对象中的product变量
+                // 让页面和product变量进行绑定，当product中有值时候会发生改变
+                v.product = response.data;
+            })
+        },
+        methods:{
+            update(){
+                axios.post("/update",v.product).then(function (response){
+                    alert("修改成功")
+                    location.href="/list.html";
+                })
+            }
+        }
+    })
+</script>
+</body>
+</html>

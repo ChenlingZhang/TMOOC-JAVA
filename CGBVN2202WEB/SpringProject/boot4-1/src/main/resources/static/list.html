@@ -12,12 +12,18 @@
           <th>商品标题</th>
           <th>商品价格</th>
           <th>商品销量</th>
+          <th>操作</th>
       </tr>
       <tr v-for="element in arr">
           <td>{{element.id}}</td>
           <td>{{element.title}}</td>
           <td>{{element.price}}</td>
           <td>{{element.saleCount}}</td>
+          <!--废除超链接自身的跳转功能-->
+          <td>
+              <a href="javascript:void(0)" @click="del(element.id)">删除</a>
+              <a :href="'/update.html?id='+element.id">修改</a>
+          </td>
       </tr>
   </table>
   <script src="js/vue.js"></script>
@@ -33,6 +39,14 @@
               axios.get("/select").then(function (response) {
                   v.arr=response.data;
               })
+          },
+          methods:{
+              del(id){
+                  axios.get("/delete?id="+id).then(function (response) {
+                      alert("删除成功");
+                      location.reload();
+                  })
+              }
           }
       })
   </script>
