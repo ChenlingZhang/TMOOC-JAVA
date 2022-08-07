@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringProject.iml" filepath="$PROJECT_DIR$/.idea/SpringProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/boot4-1/boot4-1.iml" filepath="$PROJECT_DIR$/boot4-1/boot4-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot4-2/boot4-2.iml" filepath="$PROJECT_DIR$/boot4-2/boot4-2.iml" />
     </modules>
   </component>
 </project>
