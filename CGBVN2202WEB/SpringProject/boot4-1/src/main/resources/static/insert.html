@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加商品</title>
+</head>
+<body>
+    <h1>添加商品</h1>
+    <div>
+        <input type="text" v-model="p.title" placeholder="商品标题">
+        <input type="text" v-model="p.price" placeholder="商品价格">
+        <input type="text" v-model="p.saleCount" placeholder="商品销量">
+        <input type="submit" value="添加" @click="insert()">
+    </div>
+    <script src="js/vue.js"></script>
+    <script src="js/axios.min.js"></script>
+    <script>
+        let v = new Vue({
+            el:"div",
+            data:{
+                p:{
+                    title:"",
+                    price:"",
+                    saleCount:""
+                }
+            },
+            methods:{
+              insert(){
+                  // 发出异步请求
+                  axios.post("/insert",v.p).then(function (response) {
+                      alert("添加完成！");
+                      location.href="/";
+                  })
+              }
+            }
+        })
+    </script>
+</body>
+</html>
