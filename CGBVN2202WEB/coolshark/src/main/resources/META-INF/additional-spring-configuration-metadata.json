@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "dirPath",
+      "type": "java.lang.String",
+      "description": "Description for dirPath."
+    }
+  ] }

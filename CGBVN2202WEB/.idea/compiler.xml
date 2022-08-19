@@ -6,11 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="coolshark" />
         <module name="JDBC01" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="coolshark" target="1.8" />
       <module name="JDBC01" target="8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="coolshark" options="-parameters" />
+    </option>
   </component>
 </project>

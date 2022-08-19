@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="css/eui.css">
+</head>
+<body>
+<h1>发布微博页面</h1>
+<div id="app">
+    <input type="text" placeholder="说点什么..." v-model="weibo.content">
+    <!-- name代表文件上传时,文件的参数名 将文件以picFile传递向后端时，后端会以picFile进行接收
+         :limit="1" 设置只能选择1张图片 -->
+    <el-upload
+            action="upload"
+            name = "picFile"
+            :limit="1"
+            list-type="picture-card"
+            :on-preview="handlePictureCardPreview"
+            :on-remove="handleRemove"
+            :on-success="handleSuccess">
+        <i class="el-icon-plus"></i>
+    </el-upload>
+    <el-dialog :visible.sync="dialogVisible">
+        <img width="100%" :src="dialogImageUrl" alt="">
+    </el-dialog>
+    <input type="button" value="发布微博" @click="insert()">
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="js/vue.js"></script>
+<!-- import JavaScript -->
+<script src="js/eui.js"></script>
+<script src="js/axios.min.js"></script>
+<script>
+    let v = new Vue({
+        el: '#app',
+        data: function() {
+            return {
+                dialogImageUrl: '',
+                dialogVisible: false,
+                weibo:{
+                    content:"",
+                    url:""
+                }
+            };
+        },
+        methods: {
+            handleRemove(file, fileList) {
+                /*file表示需要被删除的文件，file.response表示文件上传成功后，服务器响应的数据*/
+                console.log(file, fileList);
+                axios.get("/remove?name="+file.response).then(function (response) {
+                    alert("服务器图片删除成功！");
+                })
+            },
+            handlePictureCardPreview(file) {
+                this.dialogImageUrl = file.url;
+                this.dialogVisible = true;
+            },
+
+            insert(){
+                if (v.weibo.content.trim()==""||v.weibo.url==""){
+                    alert("微博内容或者图片不能为空");
+                    return;
+                }
+                axios.post("insert",v.weibo).then(function (response) {
+                    alert("发布成功");
+                    location.href="/";
+                })
+            },
+            handleSuccess(response,file,fileList){
+                // response = file.response;
+                console.log("文件上传成功后图片url: " + response);
+                v.weibo.url = response;
+            },
+        }
+    })
+</script>
+</html>

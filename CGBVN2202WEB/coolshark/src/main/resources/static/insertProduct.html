@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="css/eui.css">
+</head>
+<body>
+<div id="app">
+    <el-page-header style="background-color:#0095d7; color: white; line-height: 60px" @back="goBack()" content="发布商品"></el-page-header>
+    <!-- 分割线-->
+    <el-divider></el-divider>
+    <el-card>
+        <el-form>
+            <el-form-item label="商品标题" label-width="80px">
+                <el-input v-model="product.title"></el-input>
+            </el-form-item>
+
+            <el-form-item label="价格" label-width="80px">
+                <el-input v-model="product.price"></el-input>
+            </el-form-item>
+
+            <el-form-item label="原价" label-width="80px">
+                <el-input v-model="product.oldPrice"></el-input>
+            </el-form-item>
+
+            <el-form-item label="销量" label-width="80px">
+                <el-input v-model="product.saleCount"></el-input>
+            </el-form-item>
+
+            <el-form-item label="分类" label-width="80px">
+                <template>
+                    <el-select v-model="product.categoryId" placeholder="请选择">
+                        <el-option v-for="category in categoryArr " :label="category.name" :value="category.id">
+
+                        </el-option>
+                    </el-select>
+                </template>
+            </el-form-item>
+
+
+            <el-form-item label="商城图片" label-width="80px">
+                <el-upload
+                        action="upload"
+                        name = "picFile"
+                        :limit="1"
+                        list-type="picture-card"
+                        :on-preview="handlePictureCardPreview"
+                        :on-remove="handleRemove"
+                        :on-success="handleSuccess">
+                    <i class="el-icon-plus"></i>
+                </el-upload>
+                <el-dialog :visible.sync="dialogVisible">
+                    <img width="100%" :src="dialogImageUrl" alt="">
+                </el-dialog>
+            </el-form-item>
+        </el-form>
+        <!-- name代表文件上传时,文件的参数名 将文件以picFile传递向后端时，后端会以picFile进行接收
+         :limit="1" 设置只能选择1张图片 -->
+
+        <el-button style="margin-top: 10px" @click="insert()">发布</el-button>
+    </el-card>
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="js/vue.js"></script>
+<!-- import JavaScript -->
+<script src="js/eui.js"></script>
+<!-- import axios -->
+<script src="js/axios.min.js"></script>
+<script>
+    let v = new Vue({
+        el: '#app',
+        data: function() {
+            return {
+                dialogImageUrl: '',
+                dialogVisible: false,
+                product:{
+                    title:"",
+                    url:"",
+                    price:0,
+                    oldPrice:0,
+                    saleCount:0,
+                    categoryId:0
+                },
+                categoryArr:[]
+            };
+        },
+        methods: {
+            handleRemove(file, fileList) {
+                /*file表示需要被删除的文件，file.response表示文件上传成功后，服务器响应的数据*/
+                console.log(file, fileList);
+                axios.get("/remove?name="+file.response).then(function (response) {
+                    alert("服务器图片删除成功！");
+                })
+            },
+            handlePictureCardPreview(file) {
+                this.dialogImageUrl = file.url;
+                this.dialogVisible = true;
+            },
+
+            insert(){
+                if (v.product.url==""){
+                    alert("图片上传不能为空");
+                    return;
+                }
+                axios.post("product/insert",v.product).then(function (response) {
+                    alert("发布成功");
+                    location.href="/admin.html";
+                })
+            },
+            handleSuccess(response,file,fileList){
+                // response = file.response;
+                console.log("文件上传成功后图片url: " + response);
+                v.product.url = response;
+            },
+
+            goBack(){
+                // 返回上一级页面
+                history.back();
+            }
+        },
+        created:function (){
+            axios.get("/category/select").then(function (response) {
+                v.categoryArr = response.data;
+            })
+        }
+    })
+</script>
+</html>
