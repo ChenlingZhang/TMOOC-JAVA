@@ -1,7 +1,9 @@
 package cn.tedu.csmall.sever;
 
 import cn.tedu.csmall.sever.Controller.CategoryController;
-import cn.tedu.csmall.sever.Service.CategoryService;
+import cn.tedu.csmall.sever.Repo.ICategoryRepository;
+import cn.tedu.csmall.sever.Service.Impl.CategoryServiceImpl;
+import cn.tedu.csmall.sever.Service.ICategoryService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -21,7 +23,7 @@ class ApplicationTests {
         CategoryController categoryController = annotationContainer.getBean(CategoryController.class);
         System.out.println(categoryController);
 
-        CategoryService service = annotationContainer.getBean(CategoryService.class);
+        ICategoryService service = annotationContainer.getBean(CategoryServiceImpl.class);
         System.out.println(service);
 
         Date date = annotationContainer.getBean(Date.class);
@@ -36,14 +38,26 @@ class ApplicationTests {
 
     @Test
     public void testGetBensSingleton(){
-        CategoryService service1 = annotationContainer.getBean(CategoryService.class);
-        CategoryService service2 = annotationContainer.getBean(CategoryService.class);
-        CategoryService service3 = annotationContainer.getBean(CategoryService.class);
+        ICategoryService service1 = annotationContainer.getBean(CategoryServiceImpl.class);
+        ICategoryService service2 = annotationContainer.getBean(CategoryServiceImpl.class);
+        ICategoryService service3 = annotationContainer.getBean(CategoryServiceImpl.class);
         System.out.println(service1);
         System.out.println(service2);
         System.out.println(service3);
     }
+    @Autowired
+    CategoryController categoryController;
+    @Autowired
+    ICategoryService categoryService;
+    @Autowired
+    ICategoryRepository categoryRepository;
 
-
-
+    @Test
+    public void testAutoWired(){
+        System.out.println(categoryController.categoryService);
+        System.out.println(categoryController);
+        System.out.println(categoryService);
+        System.out.println(categoryRepository);
+        //System.out.println(categoryController.categoryService.categoryRepository);
+    }
 }

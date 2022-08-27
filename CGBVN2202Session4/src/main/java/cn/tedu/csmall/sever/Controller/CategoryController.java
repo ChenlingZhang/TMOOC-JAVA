@@ -1,6 +1,8 @@
 package cn.tedu.csmall.sever.Controller;
 
 
+import cn.tedu.csmall.sever.Service.ICategoryService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 
@@ -13,8 +15,12 @@ import org.springframework.stereotype.Controller;
  *      /@Repository--存储控制器
  *  2. 必须在"组件扫描"的包下
  */
+
 @Controller
 public class CategoryController {
+    @Autowired
+    public ICategoryService categoryService;
+
     public CategoryController(){
         System.out.println("Create Controller Object: CategoryController");
     }
