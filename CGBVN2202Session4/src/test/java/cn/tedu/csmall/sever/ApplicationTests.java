@@ -7,7 +7,9 @@ import cn.tedu.csmall.sever.Service.ICategoryService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.web.context.support.GenericWebApplicationContext;
 
 import java.time.LocalDateTime;
 import java.util.Calendar;
@@ -15,8 +17,16 @@ import java.util.Date;
 
 @SpringBootTest
 class ApplicationTests {
+    // Spring Boot 对应的容器
+    //@Autowired
+    //public AnnotationConfigApplicationContext annotationContainer;
+
+    // Spring MVC 对应的容器
+    //@Autowired
+    //public GenericWebApplicationContext annotationContainer;
+
     @Autowired
-    public AnnotationConfigApplicationContext annotationContainer;
+    public ApplicationContext annotationContainer;
 
     @Test
     void contextLoads() {

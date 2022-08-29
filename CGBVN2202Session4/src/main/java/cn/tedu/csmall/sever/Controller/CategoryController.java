@@ -2,8 +2,10 @@ package cn.tedu.csmall.sever.Controller;
 
 
 import cn.tedu.csmall.sever.Service.ICategoryService;
+import cn.tedu.csmall.sever.pojo.dto.CategoryAddNewDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
 
 
 /**
@@ -16,7 +18,9 @@ import org.springframework.stereotype.Controller;
  *  2. 必须在"组件扫描"的包下
  */
 
-@Controller
+//@Controller
+@RestController
+@RequestMapping("/category")
 public class CategoryController {
     @Autowired
     public ICategoryService categoryService;
@@ -24,4 +28,31 @@ public class CategoryController {
     public CategoryController(){
         System.out.println("Create Controller Object: CategoryController");
     }
+    // requestmapping 注解可以限制访问的类型例如限制访问的类型为get请求，需要在注解内加入method=RequestMethod.GET @RequestMapping（value=""，method=RequestMethod.__）
+    @RequestMapping(value = "/{id:[0-9]+}/delete")
+    //@ResponseBody // 返回响应正文
+    public String delete(@PathVariable long id){
+        System.out.println("CategoryController.delet()");
+        System.out.println("id = " + id);
+        return "删除商品--待完成";
+    }
+    //此下写法可以被PostMapping替代
+    @RequestMapping(value = "/add-new",method = RequestMethod.GET)
+    public String addNew(){
+        System.out.println("CategoryController.addNew");
+        return "新增商品 -- 待完成";
+    }
+
+    public String list(){
+        System.out.println("CategoryController.list");
+        return "商品列表--待完成";
+    }
+
+    @RequestMapping("/{id:[0-9]+}/update-by-id")
+    public String updateByID(@PathVariable Long id, CategoryAddNewDTO categoryAddNewDTO){
+        System.out.println("CategoryController.updateByID");
+        System.out.println("id = " + id + ", categoryAddNewDTO = " + categoryAddNewDTO);
+        return "更新商品--待完成";
+    }
+
 }
