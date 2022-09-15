@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.tedu.csmall.sever.Mapper.BrandMapper">
+    <!--int insert(Brand brand)-->
+    <!--useGenerateKeys 在执行添加记录后可以获取到数据库自动生成的主键ID-->
+    <!--keyProperty 取id和key值，向对应对象的属性赋值，不是数据库表中的字段-->
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        insert into pms_brand(name, pinyin, logo, description, keywords, sort, sales, product_count, comment_count, positive_comment_count, enable, gmt_create, gmt_modified)
+        values(#{name}, #{pinyin}, #{logo}, #{description}, #{keywords}, #{sort}, #{sales}, #{productCount}, #{commentCount}, #{positiveCommentCount}, #{enable}, #{gmtCreate}, #{gmtModified})
+    </insert>
+    <!--int deleteById(Long id)-->
+    <delete id="deleteById">
+        delete from pms_brand where id=#{id}
+    </delete>
+    <!--int deletByIds(Long... id)-->
+    <delete id="deleteByIds">
+        delete from pms_brand where id in (
+            # mybatis 中提供的foreach，collection代表需要迭代的数据类型，item代表接收参数, separator代表分隔符
+            # 类似于 foreach id in array
+            <foreach collection="array" item="id" separator=",">
+                #{id}
+            </foreach>
+            )
+    </delete>
+    <!--int updateNameById(Long id, String name)-->
+    <update id="updateNameById">
+        update pms_brand set name=#{name} where id=#{id}
+    </update>
+    <!--int updateById(Brand brand)-->
+    <update id="updateById">
+        update pms_brand
+        <set>
+            <if test="name != null">
+                name=#{name},
+            </if>
+            <if test="pinyin != null">
+                pinyin = #{pinyin},
+            </if>
+            <if test="logo != null">
+                logo = #{logo},
+            </if>
+            <if test="description != null">
+                description = #{description},
+            </if>
+            <if test=" keywords != null">
+                keywords = #{keywords},
+            </if>
+            <if test=" sort != null">
+                sort = #{sort},
+            </if>
+            <if test=" sales != null">
+                sales = #{sales},
+            </if>
+            <if test=" productCount != null">
+                product_count= #{productCount},
+            </if>
+            <if test=" commentCount != null">
+                comment_count= #{commentCount},
+            </if>
+            <if test=" positiveCommentCount != null">
+                positive_comment_count= #{[positiveCommentCount},
+            </if>
+            <if test=" enable != null">
+                enable= #{enable},
+            </if>
+            <if test=" gmtCreate != null">
+                gmt_create= #{gmtCreate},
+            </if>
+            <if test=" gmtModified != null">
+                gmt_modified= #{gmtModified},
+            </if>
+        </set>
+        where
+            id=#{id}
+    </update>
+    <!--int count()-->
+    <select id="count" resultType="int">
+        select count(*) from pms_brand
+    </select>
+    <!--int countByName()-->
+    <select id="countByName" resultType="int">
+        select count(*) from pms_brand where name=#{name}
+    </select>
+    <!--int selectById()-->
+    <select id="getById" resultMap="DetailResultMap">
+        select id, name, pinyin, logo, description, keywords, sort, sales,
+               product_count,comment_count,positive_comment_count,enable,gmt_create,gmt_modified
+        from pms_brand
+        where id=#{id}
+    </select>
+    <!--映射文件-->
+    <resultMap id="DetailResultMap" type="cn.tedu.csmall.sever.POJO.VO.BrandDetailVO">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="pinyin" property="pinyin"/>
+        <result column="logo" property="logo"/>
+        <result column="keywords" property="keywords"/>
+        <result column="sort" property="sort"/>
+        <result column="sales" property="sales"/>
+        <result column="product_count" property="productCount"/>
+        <result column="comment_count" property="commentCount"/>
+        <result column="positive_comment_count" property="positiveCommentCount"/>
+        <result column="enable" property="enable"/>
+        <result column="gmt_creat" property="gmtCount"/>
+        <result column="gmt_modified" property="gmtModified"/>
+    </resultMap>
+    <!--List<BrandListItemVO> getAllBrands-->
+    <select id="getAllBrands" resultMap="ListItemResultMap">
+        select
+        <include refid="ListItemQuery"/>
+        from pms_brand order by id
+    </select>
+    <resultMap id="ListItemResultMap" type="cn.tedu.csmall.sever.POJO.VO.BrandListItemVO">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="pinyin" property="pinyin"/>
+        <result column="logo" property="logo"/>
+        <result column="keywords" property="keywords"/>
+        <result column="sort" property="sort"/>
+        <result column="sales" property="sales"/>
+        <result column="product_count" property="productCount"/>
+        <result column="comment_count" property="commentCount"/>
+        <result column="positive_comment_count" property="positiveCommentCount"/>
+        <result column="enable" property="enable"/>
+        <result column="gmt_creat" property="gmtCount"/>
+        <result column="gmt_modified" property="gmtModified"/>
+    </resultMap>
+    <sql id="ListItemQuery">
+        <if test="true">
+            id, name, pinyin, logo, description, keywords, sort, sales,
+            product_count,comment_count,positive_comment_count,enable,gmt_create,gmt_modified
+        </if>
+    </sql>
+
+</mapper>
